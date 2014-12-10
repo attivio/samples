@@ -1,0 +1,12 @@
+<attivio>
+  <!-- Copyright 2014 Attivio Inc., All rights reserved. -->
+  <module name="module-testforcode" version="-1">
+    <description>Module containing sample SDK code.</description>
+    <components>
+      <component class="com.acme.SampleAdvancedIngestTransformer" />
+      <component class="com.acme.SampleQueryTransformer" />
+      <component class="com.acme.SampleResponseTransformer" />
+      <component class="com.acme.SampleSimpleIngestTransformer" />
+    </components>
+  </module>
+</attivio>
