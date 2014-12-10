@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://www.attivio.com/ -->
+<html itemscope="" itemtype="http://schema.org/WebPage" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" class="" static="yes"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./index_files/beacon.js" async=""></script><script async="" src="./index_files/analytics.js"></script><script type="text/javascript" async="" src="./index_files/keen-2.1.0-min.js"></script><script type="text/javascript" async="" src="./index_files/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"74f55de04c","applicationID":"4870173","transactionName":"IlcLQxBeWFoHShYTWAZdFhgRWVtBPUtNAk0IWw==","queueTime":0,"applicationTime":26,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-476.min.js","userAttributes":"GhoVUhBcVVoLVlJBA0NZEUMLR11ZQEU="}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQcOWVBADAsHVFBVBA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:20,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:20,2:21,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:21,2:20,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:21,2:20,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:21,2:20,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:21,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,f="addEventListener",u="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),s[f]("load",n,!1)):(c[u]("onreadystatechange",r),s[u]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],20:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],21:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:20,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+
+
+<title>Attivio + GitHub = <3</title>
+<script phantom="keep">
+window.$S={};$S.global_conf={"environment":"production","host_suffix":"strikingly.com","SEGMENTIO_API_KEY":"eb3txa37hi","FACEBOOK_APP_ID":"138736959550286","BOBCAT_ANALYTICS_POST_URL":"//stats.b.strikingly.com","locale":"en","in_china":false,"browser_locale":"en"};$S.conf={"pages_show_static_path":"//assets.strikingly.com/assets/pages_show_static-e28aa3e17861249d4c2d87c0b7cbdb62.js","keenio_collection":"strikingly_pageviews","keenio_pbs_impression_collection":"strikingly_pbs_impression","keenio_pbs_conversion_collection":"strikingly_pbs_conversion","keenio_pageservice_imageshare_collection":"strikingly_pageservice_imageshare","headless_render":true};$S.page_meta={"id":299259,"permalink":"attivio","created_at":"2014-11-10T12:48:58-08:00","user":{"membership":"pro","id":165181},"category":{"name":"business","id":3},"social_media_config":{"url":"http://www.attivio.com/","title":"Attivio Enterprise Search and Big Data Technology","image":"http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_300,q_90,w_300/v1/165181/220px-high-attivio-h-logo_uwgfto.png","description":"Attivio Enterprise Search and Big Data Discovery","fb_app_id":"138736959550286"},"keenio_config":{"keenio_project_id":"5317e03605cd66236a000002","keenio_write_key":"efd460f8e282891930ff1957321c12b64a6db50694fd0b4a01d01f347920dfa3ce48e8ca249b5ea9917f98865696cfc39bc6814e4743c39af0a4720bb711627d9cf0fe63d5d52c3866c9c1c3178aaec6cbfc1a9ab62a3c9a827d2846a9be93ecf4ee3d61ebee8baaa6a1d735bff6e37b"},"show_strikingly_logo":false,"show_navigation_buttons":false,"slide_names":["Slider","Features","Action","Benefits","Action","Customers","Action","About","Contact","Get in touch","Footer","Contact"],"social_media":{"type":"SocialMediaList","id":null,"link_list":[{"type":"Facebook","id":null,"url":"","link_url":"","share_text":"Saw an awesome one pager. Check it out @SimplyStriking","app_id":138736959550286,"show_button":null},{"type":"Twitter","id":null,"url":"","link_url":"","share_text":"Saw an awesome one pager. Check it out @strikingly","show_button":null},{"type":"GPlus","id":null,"url":"","link_url":"","share_text":"Saw an awesome one pager. Check it out @SimplyStriking","show_button":null}],"button_list":[{"type":"Facebook","id":null,"url":"","link_url":"","share_text":"Saw an awesome one pager. Check it out @SimplyStriking","app_id":138736959550286,"show_button":false},{"type":"Twitter","id":null,"url":"","link_url":"","share_text":"Saw an awesome one pager. Check it out @strikingly","show_button":false},{"type":"GPlus","id":null,"url":"","link_url":"","share_text":"Saw an awesome one pager. Check it out @SimplyStriking","show_button":false},{"type":"LinkedIn","id":null,"url":"","link_url":"","share_text":"Attivio Enterprise Search","show_button":false}]},"has_optimizely":false,"optimizely_experiment_id":"","theme":{"name":"app"},"services":[],"strk_upvt":"SXFicUFwWkZhdC9YOVdseUxGc0JoVUEvc1pXZC8wNzl2SkRKZm5FckxHVGxnR3Ixa2JiRS90TWVqMmUxQWRxVmRmL0ZVTUpsRzRRaU1nMG9JdzBuQVdJaXlwUVhmRGIzMUVFek56cU1mSkZLdTJiRlNNdGQrYmNtcVBXN3lIWjUtLS9kdlQ4T3hnMmt3MUJHOUVIZGlwNEE9PQ==--73a0aa1fb7df4a002b3509bac2c88be9c0dc3282"};$S.app_instances=[];
+</script>
+
+<meta content="width=device-width,initial-scale=1.0,user-scalable=yes,minimum-scale=1.0,maximum-scale=3.0" id="viewport" name="viewport">
+<link href="./index_files/main_show-d6f1e357738f3094d1d1d3974302b6f3.css" media="screen" rel="stylesheet" type="text/css"><link href="./index_files/css" media="screen" rel="stylesheet" type="text/css"><link href="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_64,w_64/v1/165181/favicon_cgyfie.png" rel="shortcut icon" type="image/x-icon">
+<link href="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_60,q_90,w_60/v1/165181/220px-high-attivio-h-logo_uwgfto.png" rel="apple-touch-icon" sizes="60x60">
+<link href="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_76,q_90,w_76/v1/165181/220px-high-attivio-h-logo_uwgfto.png" rel="apple-touch-icon" sizes="76x76">
+<link href="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_120,q_90,w_120/v1/165181/220px-high-attivio-h-logo_uwgfto.png" rel="apple-touch-icon" sizes="120x120">
+<link href="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_152,q_90,w_152/v1/165181/220px-high-attivio-h-logo_uwgfto.png" rel="apple-touch-icon" sizes="152x152">
+<meta content="Attivio Enterprise Search and Big Data Technology" property="og:title">
+<meta content="http://www.attivio.com/" property="og:url">
+<meta content="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_300,q_90,w_300/v1/165181/220px-high-attivio-h-logo_uwgfto.png" property="og:image">
+<meta content="Attivio Enterprise Search and Big Data Technology" property="og:site_name">
+<meta content="Attivio Enterprise Search and Big Data Discovery" property="og:description">
+<meta content="Attivio Enterprise Search and Big Data Technology" itemprop="name">
+<meta content="Attivio Enterprise Search and Big Data Discovery" itemprop="description">
+<meta content="http://res.cloudinary.com/hrscywv4p/image/upload/c_fill,g_faces:center,h_300,q_90,w_300/v1/165181/220px-high-attivio-h-logo_uwgfto.png" itemprop="image">
+<meta content="Attivio, Big Data, Enterprise Search, eDiscovery, Hadoop, Enterprise Content Management, ECM, Big Data Software, Big Data Platform, Big Data Technology" name="keywords">
+<meta content="//assets.strikingly.com" name="asset-url">
+
+<meta name="mode">
+<meta content="{&quot;permalink&quot;:&quot;attivio&quot;,&quot;id&quot;:299259}" name="support-helper">
+<meta content="{&quot;custom_domain&quot;:&quot;www.attivio.com&quot;,&quot;google_analytics_tracker&quot;:&quot;UA-6012369-1&quot;}" name="site-configs">
+<link href="./index_files/index.html" rel="canonical">
+
+<style>
+/* this code changes the menu links color for when you hover over them */
+
+.wide.header .nav li a.selected,
+.wide.header .nav li a:hover {
+color: #003C7E;
+}
+
+.wide.header .nav li
+{
+color: #004ca0;
+}
+
+/* this code changes all of the headers and links in the text body */
+h1, h2, h3, h4, h5, h6,
+.wide .container a, .wide .container p a,
+.wide .container .p a
+{
+color: #004ca0;
+}
+
+/*lighter — this is for when you hover over links in the text body*/
+
+.wide .container a:hover,
+.wide .container p a:hover,
+.wide .container .p a:hover {
+color: #1599D4;
+}
+
+/* change the color of the buttons  for contact form*/
+.wide .container .email-form .input .submit-button,
+.wide .container .cta-button a.button-component {
+background: #DD260C;
+font-size:18px;
+font-weight:200;
+}
+
+/*lighter- this is for when you hover over the buttons for contact form*/
+.wide .container .email-form .input .submit-button:hover,
+.wide .container .cta-button a.button-component:hover
+{
+background: #f4513a;
+font-size:18px;
+font-weight:200;
+}
+
+/*”background” changes the color of the footer. color changes the color of the footer text*/
+.wide.footer {
+background: #F5F5F5;
+color: #999999;
+}
+
+/*background changes the color of the header*/
+.wide.header {
+background:rgba(255,255,255,0.8);
+}
+</style>
+
+<script phantom="keep">
+if (!console) var console = {
+log: function() {},
+warn: function() {},
+error: function() {}
+};
+isHeadlessRendering = function() {
+return ($S.conf.headless_render && document.getElementsByTagName('html')[0].getAttribute('static') != 'yes');
+}
+var _gaq = _gaq || [];
+if (!isHeadlessRendering() && !$S.conf.is_screenshot_rendering) {
+/* load errorception */
+var _errs=["518ac810441fb4b7180002fa"];(function(a,b){a.onerror=function(){_errs.push(arguments)};
+var d=function(){var a=b.createElement("script"),c=b.getElementsByTagName("script")[0];
+a.src="//d15qhc0lu1ghnk.cloudfront.net/beacon.js";a.async=!0;
+c.parentNode.insertBefore(a,c)};a.addEventListener?a.addEventListener("load",d,!1):
+a.attachEvent("onload",d)})(window,document);
+_gaq.push(['_setAccount', 'UA-25124444-6']);
+_gaq.push(['_setDomainName', 'strikingly.com']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+// configuration for keen.io
+var Keen=Keen||{configure:function(e){this._cf=e},addEvent:function(e,t,n,i){this._eq=this._eq||[],this._eq.push([e,t,n,i])},setGlobalProperties:function(e){this._gp=e},onChartsReady:function(e){this._ocrq=this._ocrq||[],this._ocrq.push(e)}};(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+"dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+
+// Configure the Keen object with your Project ID and (optional) access keys.
+Keen.configure({
+projectId: $S.page_meta.keenio_config.keenio_project_id,
+writeKey: $S.page_meta.keenio_config.keenio_write_key // required for sending events
+});
+}
+</script>
+
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style><style type="text/css"></style><style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
+
+<body class="show" id="pages" spellcheck="false" ontouchstart="" screen_capture_injected="true"><script phantom="keep" src="./index_files/jquery.min.js" type="text/javascript"></script>
+<script phantom="keep">
+window.jQuery || document.write('<script src="//assets.strikingly.com/assets/jquery-78ef9afcc2199a30e3ea419c9be7e2cb.js"><\/script>')
+</script>
+<script src="./index_files/main_static-d24b80b83a0356423feb0709bab69346.js" type="text/javascript"></script>
+<div data-bind="attr:{&#39;class&#39;: data.templateVariation}" id="s-content" class="">
+
+<div data-bind="with: data.menu.components" id="strikingly-navigation-menu">
+<div class="strikingly-nav-spacer" data-bind="visible: !(logo.hasContentOrIsEditMode() || title.hasContentOrIsEditMode()) " style="display: none; "></div>
+<div class="wide header navigator" data-bind="css:{&#39;fixed-hidden&#39;: !(logo.hasContentOrIsEditMode() || title.hasContentOrIsEditMode())}, visible: $root.data.showNav">
+<div class="strikingly-nav-spacer"></div>
+<div class="container">
+<div class="six columns s-logo-column" data-bind="css:{&#39;twelve offset-two center&#39;: !$root.data.showNav}">
+<h5 class="caps" style="margin-top: 9px;">
+<span class="logo-container ib" data-bind="visible: logo.hasContentOrIsEditMode()">
+<span class="logo ib" data-asset-type="flat-circle-160-free" data-component="image" data-name="logo" data-use-url="true"><div class="content content2" data-bind="fadeVisibleAndHide: !logo.isState(&#39;editor&#39;)" style="visibility: visible; opacity: 1; ">
+<a class="image-link" data-bind="if: logo.hasLink() || !edit_page.isShowPage, attr: { href: logo.link(), target: logo.target() }" href="http://www.attivio.com" target="_self">
+<img alt="Go to Attivio Home" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: logo.assetUrl, alt: logo.caption, title: logo.caption }" src="./index_files/oogpayulp0ko6hoiyvcz.png" class="lazy-img" data-original="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/oogpayulp0ko6hoiyvcz.png" title="Go to Attivio Home" style="position: relative;">
+</a>
+<span class="image-link" data-bind="ifnot: logo.hasLink() || !edit_page.isShowPage"></span>
+</div></span>
+</span>
+</h5>
+</div>
+<div class="ten columns s-nav-column" data-bind="visible: $root.data.showNav">
+<div class="nav" style="margin-top: 12px;">
+</div>
+</div>
+</div>
+</div>
+<div class="header-spacer" data-bind="visible: $root.data.showNav" style="height: 70px;"></div>
+</div>
+
+<ul class="slides" data-bind="stopBinding: true">
+
+<li class="slide" tabindex="0">
+<a class="section-anchor" data-scroll-name="#3" style="top: -70px;"></a>
+<a class="section-name-anchor" data-section-name="Action"></a>
+<div class="wide image cta-section strikingly-light-text lazy-background hasImage" data-bind="&#39;className&#39;: background.getSelectedClassName(), &#39;style&#39;: background.selectedStyleLazy(), &#39;css&#39;:{&#39;lazy&#39;:true, &#39;lazy-background&#39;:true, hasImage:background.hasContent()}, &#39;attr&#39;: {&#39;data-background&#39;: background.assetUrl()}" style="background-image: url(http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,f_auto,fl_progressive,h_1200,q_90,w_2000/v1/165181/https_www_filepicker_io_api_file_Plh7AIwvSBKEr2VZX4Nt_uy0if4.jpg); background-size: cover; background-position: 49% 50%; background-repeat: no-repeat;" data-background="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,f_auto,fl_progressive,h_1200,q_90,w_2000/v1/165181/https_www_filepicker_io_api_file_Plh7AIwvSBKEr2VZX4Nt_uy0if4.jpg">
+<div class="container">
+<div class="fourteen columns offset-one center">
+<h1><div data-component="text" data-name="title" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(title.isState(&#39;editor&#39;) || !title.hasContent()), htmlValue: title.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: &#39;Open Sans&#39;; "><div><a href="http://attivio.github.io">Attivio on GitHub</a></div></div></div></h1>
+<br>
+<div class="p"><div data-component="text" data-name="subtitle" data-text-type="body" class="text-component"><div class="content content2" data-bind="visible: !(subtitle.isState(&#39;editor&#39;) || !subtitle.hasContent()), htmlValue: subtitle.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: &#39;Open Sans&#39;; "><div>
+<span style="font-size: 130%;">Attivio is bringing best practices to GitHub. </span><br><span style="font-size: 130%;">Check out the latest in collaboration and sample workflow components! </span>
+</div></div></div></div>
+<br>
+<div class="cta-button"><div class="button content"><a class="button-component" data-bind="attr: { href: button.url, target: button.target() }, text: button.text, visible: button.hasContent()" data-component="button" href="https://github.com/attivio/samples" target="_self">CHECK OUT THE PROJECT &gt;</a>
+</div></div>
+<br>
+</div>
+</div>
+</div>
+</li>
+
+<li class="slide" tabindex="0">
+<a class="section-anchor" data-scroll-name="#6" style="top: -70px;"></a>
+<div class="wide">
+<div class="container center">
+<div class="clearfix" data-bind="visible: subtitle.hasContentOrIsEditMode() || title.hasContentOrIsEditMode()">
+<div class="sixteen columns">
+<h1 data-bind="visible: title.hasContentOrIsEditMode()"><div data-component="text" data-name="title" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(title.isState(&#39;editor&#39;) || !title.hasContent()), htmlValue: title.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: &#39;Open Sans&#39;; "><p><a href="http://insighters.attivio.com">Attivio Insighters</a></p></div></div></h1>
+<div class="p" data-bind="visible: subtitle.hasContentOrIsEditMode()"><div data-component="text" data-name="subtitle" data-text-type="body" class="text-component"><div class="content content2" data-bind="visible: !(subtitle.isState(&#39;editor&#39;) || !subtitle.hasContent()), htmlValue: subtitle.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: &#39;Open Sans&#39;; "><div>
+<div>
+Attivio Insighters is a <strong>new online community</strong>. Our goal is to <strong>give you a stronger voice</strong>,<br>learn from <strong>your experience</strong>, and provide a <strong>greater level of interaction with product</strong>.<br>
+</div></div></div></div>
+<br>
+</div>
+</div>
+<div class="clearfix s-mh"><div class="features content repeatable-component ko_container ui-sortable" data-bind="sortableRepeatable: { template: &#39;feature_box&#39;, data: features.list }"></div></div>
+</div>
+<div class="container">
+<div class="sixteen columns center line-shadow" style="display: none;">
+<img alt="Line-shadow" src="./index_files/line-shadow-71f31e5c39041a510f342a16243434ea.png">
+</div>
+</div>
+</div>
+</li>
+
+
+
+
+<li class="slide" tabindex="0">
+<a class="section-anchor" data-scroll-name="#10" style="top: -70px;"></a>
+<a class="section-name-anchor" data-section-name="Get in touch"></a>
+<div class="wide image signup strikingly-light-text lazy-background hasImage" data-bind="&#39;className&#39;: background.getSelectedClassName(), &#39;style&#39;: background.selectedStyleLazy(), &#39;css&#39;:{&#39;lazy&#39;:true, &#39;lazy-background&#39;:true, hasImage:background.hasContent()}, &#39;attr&#39;: {&#39;data-background&#39;: background.assetUrl()}" style="background-image: url(http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,f_auto,fl_progressive,h_1200,q_90,w_2000/v1/165181/https_www_filepicker_io_api_file_d0gOJPoYREehepYpE5UV_y78mnu.jpg); background-size: cover; background-position: 49% 50%; background-repeat: no-repeat;" data-background="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,f_auto,fl_progressive,h_1200,q_90,w_2000/v1/165181/https_www_filepicker_io_api_file_d0gOJPoYREehepYpE5UV_y78mnu.jpg">
+
+<div class="container">
+<div class="seven columns clearfix" data-bind="visible:media1.hasContentOrIsEditMode()" style="display: none; ">
+<div class="media">
+<div class="media1 content"><div class="content">
+<div class="video-content" data-bind="visible: media1.showVideo()" style="display:none;">
+<div class="player" data-bind="html: media1.video.parent ? (media1.video.parent.showImage() ? &#39;&#39; : media1.video.html) : media1.video.html "></div>
+</div>
+<div class="image-content" data-bind="visible: media1.showImage()" style="">
+<a class="image-link" data-bind="if: media1.image.hasLink() || !edit_page.isShowPage, attr: { href: media1.image.link(), target: media1.image.target() }" href="javascript:void(0);" target="_self"></a>
+<span class="image-link" data-bind="ifnot: media1.image.hasLink() || !edit_page.isShowPage">
+<img alt="" data-bind="attr: { &#39;class&#39;: &#39;lazy lazy-img&#39;, &#39;data-original&#39;: media1.image.assetUrl, alt: media1.image.caption, title: media1.image.caption }" src="./index_files/transparent.png" class="lazy-img" data-original="//assets.strikingly.com/assets/icons/transparent.png" title="" style="position: relative;">
+</span>
+</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+<div class="nine columns clearfix signup-desc twelve offset-two center extra-padding" data-bind="css:{&#39;twelve offset-two center extra-padding&#39;:!media1.hasContentOrIsEditMode()}">
+<div data-bind="css:{&#39;half-offset-left&#39;:media1.hasContentOrIsEditMode()}" class="">
+<h1><div data-component="text" data-name="text1" data-text-type="heading" class="text-component"><div class="content content2" data-bind="visible: !(text1.isState(&#39;editor&#39;) || !text1.hasContent()), htmlValue: text1.value, style: (window.edit_page.data.headingFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.headingFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: &#39;Open Sans&#39;; "><div><span>Get started.</span></div></div></div></h1>
+<br>
+<div class="p"><div data-component="text" data-name="text2" data-text-type="body" class="text-component"><div class="content content2" data-bind="visible: !(text2.isState(&#39;editor&#39;) || !text2.hasContent()), htmlValue: text2.value, style: (window.edit_page.data.bodyFont() != &#39;&#39;) ? { fontFamily: window.edit_page.data.bodyFont } : { fontFamily: &#39;inherit&#39; }" style="font-family: &#39;Open Sans&#39;; "><div><span style="font-size: 130%;"><span style="text-align: start;">Get in touch with a specialist to find out how Attivio can help you unlock the value</span><span style="text-align: start;">&nbsp;</span><span style="text-align: start;">hidden in your&nbsp;</span><span style="text-align: start;">information.</span></span></div></div></div></div>
+<br>
+<div class="cta-button"><div class="button content"><a class="button-component" data-bind="attr: { href: button.url, target: button.target() }, text: button.text, visible: button.hasContent()" data-component="button" href="http://attivio.com" target="_self">GET IN TOUCH &gt;</a>
+</div></div>
+<br>
+</div>
+</div>
+<input data-bind="value:email1.recipient" id="collected_email_recipient" name="collected_email[recipient]" type="hidden">
+<input data-bind="value:email1.hide_email" id="collected_email_skip_email" name="collected_email[skip_email]" type="hidden" value="false">
+<input data-bind="value:email1.hide_name" id="collected_email_skip_name" name="collected_email[skip_name]" type="hidden" value="false">
+<div class="input" style="display:none;">
+<label class="outside">Comment</label>
+<label class="overlay">Comment</label>
+<input name="collected_email[_comment]" type="text">
+</div>
+</form>
+
+</div>
+</div>
+<br>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+
+<!-- ==================== -->
+<!-- = Content Partials = -->
+<!-- ==================== -->
+
+<div id="fb-root"></div>
+
+
+<script type="text/javascript">
+var piProtocol= (("https:"== document.location.protocol) ? "https://pi." : "http://cdn.");
+document.write(unescape("%3Cscript src='" + piProtocol + "pardot.com/pi.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./index_files/pi.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+</script>
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-6012369-1', 'attivio.com');
+    ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+<script phantom="keep" src="./index_files/show_init-4960707e474840b2994e7b01c4c76a3e.js" type="text/javascript"></script>
+
+<div class="image-share s-page-layer fill">
+<div class="s-page-shade fill"></div>
+<div class="s-page-wrapper">
+<div class="s-page-content">
+<iframe frameborder="0" id="s-image-share-iframe" marginheight="0" marginwidth="0" src=""></iframe>
+</div>
+</div>
+</div>
+
+
+<script phantom="keep" type="text/javascript">
+_gaq.push(['b._setAccount', "UA-6012369-1"]);
+_gaq.push(['b._trackPageview']);
+</script>
+
+<iframe name="strk-tracking" id="strk-tracking" src="./index_files/ping.html"></iframe>
+<script src="./index_files/nr-476.min.js"></script><script type="text/javascript" src="./index_files/74f55de04c"></script></body></html>
