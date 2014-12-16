@@ -1,4 +1,4 @@
 samples
 =======
 
-Here are some coding examples that ship with AIE
+Here are some coding examples that ship with AIE @ Attivio
